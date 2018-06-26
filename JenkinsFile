@@ -1,2 +1,14 @@
-pipeline{
+pipeline
+{
+agents any
+
+stages 
+  {
+  stage{''} 
+    {
+    steps 
+    {
+   }
+  }
+ }
 }
