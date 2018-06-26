@@ -1,15 +1,23 @@
 pipeline
 {
-agents any
+agent any
 
 stages 
   {
-  stage{'Build'} 
+  stage('Build')
     {
     steps 
-    {
-    echo 'Hello World'
-   }
-  }
+        {
+            echo 'First pipeline'
+        }
+   
+    }
+    stage('Test') 
+            {
+            steps 
+            {
+                echo 'First pipeline Test'
+            }
+    }   
  }
 }
